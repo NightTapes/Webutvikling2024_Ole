@@ -1,0 +1,32 @@
+<body>
+        <header>
+        <a href="index.html">
+            <h1>Hjem</h1>
+        </a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Hjem</a>
+                </li>
+                <li>
+                    <a href="index_validerings_oppgave.html">Valideringsoppgave</a>
+                </li>
+                <li>
+                    <a href="mal">Nettside Mal</a>
+                </li>
+                <li>
+                    <a href="kontakt.html">Kontakt Oss</a>
+                </li>
+            </ul>
+        </nav>
+        </header>
+        <aside>
+            Område for ekstra innhold.
+        </aside>
+        <main>
+
+        </main>
+        <footer>
+            Ole Edward Tvedt @ oleet@hiof.no
+        </footer>
+    </body>
