@@ -35,26 +35,69 @@
             </section>
             <section>
                 <h2>Hvem starta krigen?</h2>
-                <p>Haaland. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non lectus vitae diam consequat pharetra. Integer ullamcorper massa mauris, tincidunt euismod nibh hendrerit ut. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris pretium erat at sapien consectetur, egestas congue urna ullamcorper. Maecenas nunc massa, faucibus id felis non, dapibus convallis magna. Nam dapibus venenatis placerat. Quisque aliquam lectus lectus, ut mollis mi facilisis sed. Phasellus tristique sem vel nisi congue volutpat. Phasellus faucibus, ante et fringilla dapibus, nunc elit facilisis mi, non viverra elit quam at ligula. Curabitur porttitor, magna sed scelerisque mollis, est neque dignissim erat, non ultricies ligula turpis quis ante. Praesent elementum pellentesque accumsan. </p>
+                <p>Haaland. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <a href="#">Les mer om hvorfor Haaland startet krigen</a>
             </section>
             <section>
                 <h2>Bakgrunnen for krigen</h2>
                 <article>
                     <h3>Når krigen startet</h3>
-                    <p>Etiam sodales viverra nibh. Fusce finibus, augue quis porta tristique, nunc ex consectetur lacus, at hendrerit ante enim at purus. Sed ut vehicula velit. Maecenas vel massa quis ex facilisis scelerisque viverra iaculis nibh. Aliquam rhoncus cursus lacus et ullamcorper. Nam viverra metus nec ante lacinia interdum. Fusce laoreet laoreet nisl, id finibus tortor aliquam nec. Sed at dolor consequat, vehicula lectus eu, imperdiet risus. Etiam accumsan, lectus et finibus posuere, massa magna sodales felis, nec mattis nunc ipsum quis ligula. Nunc a massa at lacus hendrerit consectetur. Pellentesque vestibulum in leo vitae luctus. Donec vel ante erat. Curabitur sit amet enim arcu. Sed vel nisl ut dolor feugiat blandit nec scelerisque massa. Nulla molestie vitae turpis in accumsan. </p>
+                    <p>Etiam sodales viverra nibh. Fusce finibus, augue quis porta tristique, nunc ex consectetur lacus, at hendrerit ante enim at purus.</p>
                     <a href="#">Les mer</a>
                 </article>
                 <article>
                     <h3>Hvilke land var med</h3>
-                    <p>Vestibulum luctus consequat metus sed rutrum. Donec eget nisl orci. Vivamus faucibus velit a dui ultricies, ac pulvinar nunc lobortis. Suspendisse non posuere sapien. Vivamus ac auctor felis. Duis magna ex, sagittis vel elit sed, bibendum luctus sapien. Proin vitae magna blandit, elementum tellus id, sollicitudin leo. Aliquam vitae luctus risus, a gravida est. Nam nisl magna, convallis sit amet est ac, vulputate mollis elit. Nam venenatis sollicitudin nisl. Nunc magna mauris, viverra vestibulum condimentum vel, vestibulum congue ante. Ut sit amet mauris et turpis maximus eleifend. </p>
+                    <p>Vestibulum luctus consequat metus sed rutrum.</p>
                     <a href="#">Les mer</a>
                 </article>
                 <article>
                     <h3>Krigens ende</h3>
-                    <p>Nullam pretium, nunc eu eleifend convallis, purus turpis sollicitudin lorem, a ultricies dui lacus eget nunc. Phasellus dui orci, molestie sed vestibulum at, euismod eu erat. Vivamus aliquam ante purus, vel sagittis orci accumsan non. Ut nec mauris rhoncus, cursus orci nec, pellentesque risus. Phasellus hendrerit, augue vel egestas euismod, nunc augue ullamcorper lacus, euismod auctor arcu orci et mauris. Sed ullamcorper sem neque. Nulla et metus volutpat magna elementum ultrices. Ut leo dolor, iaculis interdum massa eu, porta finibus nisl. Suspendisse et libero quis magna efficitur convallis. Aliquam a massa odio. Morbi bibendum dolor nisi, eu varius justo lobortis in.</p>
+                    <p>Nullam pretium, nunc eu eleifend convallis, purus turpis sollicitudin lorem, a ultricies dui lacus eget nunc.</p>
                     <a href="#">Les mer</a>
                 </article>
+            </section>
+            <section>
+                <h2>Ta kontakt med oss i dag</h2>
+                <form method="post"> <!-- these attributes works with the backend database-->
+                    <label for="Navn">Navn: </label>
+                    <input type="text" name="Navn" placeholder="Ola Nordmann.." id="Navn" maxlength="50" required> <!-- Input is a self ending field, so it does not need an ending bracket </>. ID makes it connected to the Navn text so when you click it you can interact with the input field -->
+
+                    <label> <!-- This is another method to get the same results as just above. Pick one and stick with it. -->
+                        E-post: <!-- This method also makes it so that when clicking the "E-post:" text, it interacts with the input area so that youre now writing in it -->
+                        <input type="email" name="eMail" placeholder="example@gmail.com" patten="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required> <!-- The pattern thing is making sure that only emails are entered -->
+                    </label>
+                    <label>
+                        Emne:
+                        <input type="text" name="Emne" placeholder="Hva handler det om?" maxlength="150">
+                    </label>
+                    <label>
+                        Melding:
+                        <textarea name="melding" required></textarea>
+                    </label>
+                    <label>
+                        Nei
+                        <input type="radio" name="valg">
+                    </label> <!-- These all have "valg". This makes it so you only can select one of these 3 options -->
+                    <label>
+                        Ja
+                        <input type="radio" name="valg">
+                    </label>
+                    <label>
+                        Kanskje
+                        <input type="radio" name="valg">
+                    </label>
+                    <input type="submit" value="Send Melding"> <!-- You DONT need a label on this one. But on all others -->
+                    
+                    <label>
+                        Favoritt mat?
+                        <select name="fav"> <!-- The options are not supposed to have the name attribute, the select tag is -->
+                            <option value="Pizza">Pizza</option>
+                            <option value="Sushi">Sushi</option>
+                            <option value="Kebab">Kebab</option>
+                            <option value="Pasta">Pasta</option>
+                        </select>
+                    </label>
+                </form>
             </section>
         </main>
         <footer>Ole 2024 All rights reserved</footer>
