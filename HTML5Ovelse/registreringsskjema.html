@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="nb">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registrering</title>
+    </head>
+        <body>
+        <header>
+        <a href="index.html">
+            <h1>Hjem</h1>
+        </a>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Hjem</a>
+                </li>
+                <li>
+                    <a href="index_validerings_oppgave.html">Valideringsoppgave</a>
+                </li>
+                <li>
+                    <a href="mal">Nettside Mal</a>
+                </li>
+                <li>
+                    <a href="kontakt.html">Kontakt Oss</a>
+                </li>
+            </ul>
+        </nav>
+        </header>
+        <aside>
+            Område for ekstra innhold.
+        </aside>
+        <main>
+            <section>
+                <h2>Registrer deg her.</h2>
+            <form>
+                <label for="navn">navn</label>
+                <input type="text" placeholder="Ola Nordmann..." id="navn"
+                pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
+
+                <label for="email">email</label>
+                <input type="email" placeholder="ola.nordmann@gmail.com..." id="email"
+                pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+
+                <label for="passord">passord</label>
+                <input type="password" placeholder="**********..." id="passord"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+
+                <label for="alder">alder</label>
+                <input type="number" placeholder="Din alder..." id="alder"
+                min="18" max="99" required>
+
+                <label for="telefonnummer">telefonnummer</label>
+                <input type="tel" placeholder="ditt telefonnummer..." id="telefonnummer"
+                pattern="[0-9]{8,12}" required>
+
+                <label for="fødselsdato">fødselsdato</label>
+                <input type="date" id="fødselsdato"
+                max="2023-12-31" required>
+
+                <p>Ditt kjønn: </p>
+                <input type="radio" id="mann" value="Mann">
+                <label for="mann">mann</label>
+                <input type="radio" id="kvinne" value="Kvinne">
+                <label for="kvinne">kvinne</label>
+                <input type="radio" id="annet" value="Annet">
+                <label for="annet">annet</label>
+                
+                <p>Hvor er du fra: </p>
+                <input type="radio" id="Norge" value="Norge">
+                <label for="Norge">Norge</label>
+                <input type="radio" id="Sverige" value="Sverige">
+                <label for="Sverige">Sverige</label>
+                <input type="radio" id="Danmark" value="Danmark">
+                <label for="Danmark">Danmark</label>
+
+                <label for="avkrysningsboks">avkrysningsboks</label>
+                <input type="checkbox" id="avkrysningsboks" required>
+
+                <input type="submit">
+            </form>
+            </section>
+        </main>
+        <footer>
+            Ole Edward Tvedt @ oleet@hiof.no
+        </footer>
+    </body>
+</html>
