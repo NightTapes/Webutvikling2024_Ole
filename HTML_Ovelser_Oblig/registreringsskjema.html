@@ -59,22 +59,22 @@
                 max="2023-12-31" required>
 
                 <p>Ditt kjønn: </p>
-                <input type="radio" id="mann" value="Mann">
-                <label for="mann">mann</label>
-                <input type="radio" id="kvinne" value="Kvinne">
+                <input type="radio" id="mann" value="Mann" name="kjønn" required> <!-- give all the options the same name -->
+                <label for="mann">mann</label> <!-- if you want to only be able to select 1 -->
+                <input type="radio" id="kvinne" value="Kvinne" name="kjønn">
                 <label for="kvinne">kvinne</label>
-                <input type="radio" id="annet" value="Annet">
+                <input type="radio" id="annet" value="Annet" name="kjønn">
                 <label for="annet">annet</label>
                 
                 <p>Hvor er du fra: </p>
-                <input type="radio" id="Norge" value="Norge">
-                <label for="Norge">Norge</label>
-                <input type="radio" id="Sverige" value="Sverige">
+                <input type="radio" id="Norge" value="Norge" name="land" required><!-- making one input required -->
+                <label for="Norge">Norge</label><!-- means you have to choose 1 of the options -->
+                <input type="radio" id="Sverige" value="Sverige" name="land">
                 <label for="Sverige">Sverige</label>
-                <input type="radio" id="Danmark" value="Danmark">
+                <input type="radio" id="Danmark" value="Danmark" name="land">
                 <label for="Danmark">Danmark</label>
 
-                <label for="avkrysningsboks">avkrysningsboks</label>
+                <label for="avkrysningsboks">All info er korrekt</label>
                 <input type="checkbox" id="avkrysningsboks" required>
 
                 <input type="submit">
