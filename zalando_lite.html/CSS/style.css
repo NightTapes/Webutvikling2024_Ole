@@ -1,3 +1,57 @@
-img{
-    width: 100%;
+body {
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+img {
+    width: 100%;
+    max-width: 400px;
+}
+
+#main-logo{ /* is case sensitive. to refer to an ID, have to use #, and then the id name */
+    width: 100%;
+    max-width: 250px;
+    margin: 0px auto;
+    display: block;
+}
+/* the CSS which is the most specific is what will take priority and will be ran */
+
+.flex-menu { /* .xx refers to a class */
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+
+    a{ /* This is nesting in CSS */
+        text-decoration: none;
+        color: #000; 
+    }
+  }
+
+  /* .flex-menu a{
+    text-decoration: none;
+    color: #000;
+
+  } */
+
+  .flex-space-b {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  #outlet {
+    color: #d20000;
+  }
+
+  .flex-space-b form{
+    position: relative;
+  }
+
+  .flex-space-b form label{
+    visibility: hidden;
+    position: absolute;
+
+  }
