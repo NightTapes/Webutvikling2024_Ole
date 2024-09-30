@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/style.css">
         <title></title>
     </head>
 <body>
@@ -11,7 +12,7 @@
             <h1>Hjem</h1>
         </a>
         <nav>
-            <ul>
+            <ul class="flex-menu">
                 <li>
                     <a href="index.html">Hjem</a>
                 </li>
@@ -23,6 +24,15 @@
                 </li>
                 <li>
                     <a href="kontakt.html">Kontakt Oss</a>
+                </li>
+                <li>
+                    <a href="oppskrift.html">Oppskrift</a>
+                </li>
+                <li>
+                    <a href="registreringsskjema.html">Registrering</a>
+                </li>
+                <li>
+                    <a href="studieplan.html">Studieplan</a>
                 </li>
             </ul>
         </nav>
