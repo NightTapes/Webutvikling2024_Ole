@@ -1,0 +1,121 @@
+main{
+    background-image: url('../sprites/bakgrunn.jpg');
+    background-size: contain; /* fikser størrelsen på bildet */
+    height: 500px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;/* Må ha denne for å kunne bruke position: absolute under */
+}
+
+/* Animajsonen må komme før #supermario og annet som skal animeres */
+@keyframes runningMario{
+    from{background-image: url('../sprites/staa.png');}
+    to{background-image: url('../sprites/lopende.png');}
+}
+@keyframes movingMario{
+    0%{
+        left: 0;
+        bottom: 53px;
+    }
+    20%{
+        left: 412px;
+        bottom: 53px;
+    }
+    40%{
+        left: 412px;
+        bottom: 117px;
+    }
+    50%{
+        left: 412px;
+        bottom: 53px;
+    }
+    60%{
+        bottom: 50px;
+        left: 575px;
+    }
+    70%{
+        bottom: 200px;
+    }
+    100%{
+        bottom: 53px;
+        left: 800px;
+    }
+}
+@keyframes mariodies{
+    0%{
+        background-image: url('../sprites/dead.png');
+        bottom: 53px;
+        left: 800px;
+        transform: rotate(0deg) scale(1);
+        animation-timing-function: linear;
+    }
+    25%{
+        bottom: 90px;
+        transform: rotate(-80deg) scale(1.2);
+        background-image: url('../sprites/dead.png');
+        animation-timing-function: linear;
+    }
+    50%{
+        bottom: 140px;
+        transform: rotate(-180deg) scale(1.4);
+        background-image: url('../sprites/dead.png');
+        animation-timing-function: linear;
+    }
+    75%{
+        bottom: 200px;
+        transform: rotate(-280deg) scale(1.6);
+        background-image: url('../sprites/dead.png');
+        animation-timing-function: linear;
+    }
+    100%{
+        bottom: 250px;
+        transform: rotate(-360deg) scale(1.8);
+        background-image: url('../sprites/dead.png');
+        animation-timing-function: linear;
+    }
+}
+
+@keyframes runningGoomba{
+    from{
+        background-image: url('../sprites/sopp.png');
+        right: 0;
+    }
+    to{
+        background-image: url('../sprites/sopp-kopi.png');
+        right: 305px;
+    }
+}
+@keyframes movingGoomba{
+    from{right: 0;}
+    to{right: 305px;}
+}
+
+#supermario{
+    /*background-image: url(../sprites/staa.png);*/
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    bottom: 53px;
+    animation-name: runningMario, movingMario, mariodies;/*mavingmario is placed in the 2 spot in the code below*/
+    animation-iteration-count: infinite, 1, 1;
+    animation-duration: 0.65s, 3s, 0.8s;
+    animation-fill-mode: none, forwards, forwards;
+    animation-delay: 0s, 0s, 3s;
+    z-index: 999;
+}
+
+#goomba{
+    /*background-image: url(../sprites/sopp.png);*/
+    background-size: contain;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    bottom: 53px;
+    right: 0;
+    animation-name: runningGoomba, movingGoomba;
+    animation-iteration-count: infinite, infinite;
+    animation-duration: 0.65s, 1s;
+    animation-direction: normal, alternate;
+}
