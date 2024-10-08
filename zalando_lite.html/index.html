@@ -7,91 +7,95 @@
         <title>Zalando Clone - Main Page</title>
     </head>
     <body>
-        <header>
-            <img id="main-logo" src="img/zalando_logo.png" alt="Website logo">
-            <nav class="flex-space-b">
-                <ul class="flex-menu">
-                    <li><a href="#">News</a></li>
-                    <li><a href="#">Nordic Style</a></li>
-                    <li><a href="#">Clothes</a></li>
-                    <li><a href="#">Shoes</a></li>
-                    <li><a href="#">Accessories</a></li>
-                    <li><a href="#">Streetwear</a></li>
-                    <li><a href="#">Sport</a></li>
-                    <li><a href="#">Designer</a></li>
-                    <li><a href="#" id="outlet">Outlet</a></li>
-                </ul>
-                <form>
-                    <label for="search">Search</label>
-                    <input type="search" placeholder="Search our products..." id="search">
-                    <input type="submit" value="search">
-                </form>
-            </nav>
-        </header>
-        <main>
-            <section>
-                <h2>Our best deals</h2>
-                <a href="#">Shop now -></a>
-                <img src="img/banner_1.webp" alt="Our best deals">
-            </section>
-            <section>
-                <h2>Products</h2>
-                <article>
-                    <img src="img/shoe_1.webp" alt="Hey, cool shoes man">
-                    <a href="#">Shoes</a>
-                    <a href="#"><h3>Check these out</h3></a>
-                    <p>Only $500000</p>
-                </article>
-                <article>
-                    <img src="img/shoe_1.webp" alt="Hey, cool shoes man">
-                    <a href="#">Shoes</a>
-                    <a href="#"><h3>Check these out</h3></a>
-                    <p>Only $500000</p>
-                </article>
-                <article>
-                    <img src="img/shoe_1.webp" alt="Hey, cool shoes man">
-                    <a href="#">Shoes</a>
-                    <a href="#"><h3>Check these out</h3></a>
-                    <p>Only $500000</p>
-                </article>
-                <article>
-                    <img src="img/shoe_1.webp" alt="Hey, cool shoes man">
-                    <a href="#">Shoes</a>
-                    <a href="#"><h3>Check these out</h3></a>
-                    <p>Only $500000</p>
-                </article>
-                <article>
-                    <img src="img/shoe_1.webp" alt="Hey, cool shoes man">
-                    <a href="#">Shoes</a>
-                    <a href="#"><h3>Check these out</h3></a>
-                    <p>Only $500000</p>
-                </article>
-                <article>
-                    <img src="img/shoe_1.webp" alt="Hey, cool shoes man">
-                    <a href="#">Shoes</a>
-                    <a href="#"><h3>Check these out</h3></a>
-                    <p>Only $500000</p>
-                </article>
-                <article>
-                    <img src="img/shoe_1.webp" alt="Hey, cool shoes man">
-                    <a href="#">Shoes</a>
-                    <a href="#"><h3>Check these out</h3></a>
-                    <p>Only $500000</p>
-                </article>
-                <article>
-                    <img src="img/shoe_1.webp" alt="Hey, cool shoes man">
-                    <a href="#">Shoes</a>
-                    <a href="#"><h3>Check these out</h3></a>
-                    <p>Only $500000</p>
-                </article>
-                <article>
-                    <img src="img/shoe_1.webp" alt="Hey, cool shoes man">
-                    <a href="#">Shoes</a>
-                    <a href="#"><h3>Check these out</h3></a>
-                    <p>Only $500000</p>
-                </article>
-            </section>
-        </main>
-        <footer>Zalando Clone</footer>
+        <div id="grid-container">
+            <header id="global-header">
+                <img id="main-logo" src="img/zalando_logo.png" alt="Website logo">
+                <nav class="flex-space-b">
+                    <ul class="flex-menu">
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Nordic Style</a></li>
+                        <li><a href="#">Clothes</a></li>
+                        <li><a href="#">Shoes</a></li>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Streetwear</a></li>
+                        <li><a href="#">Sport</a></li>
+                        <li><a href="#">Designer</a></li>
+                        <li><a href="#" id="outlet">Outlet</a></li>
+                    </ul>
+                    <form>
+                        <label for="search">Search</label>
+                        <input type="search" placeholder="Search our products..." id="search">
+                        <input type="submit" value="search">
+                    </form>
+                </nav>
+            </header>
+            <main>
+                <section id="banner">
+                    <div>
+                    <h2>Our best deals</h2>
+                    <a href="#">Shop now -></a>
+                    </div>
+                    <img src="img/banner_1.webp" alt="Our best deals">
+                </section>
+                <section class="flex-space-b">
+                    <h2>Products</h2>
+                    <article class="product-card">
+                        <img src="img/shoe_1.webp" alt="Hey, cool shoes man">
+                        <a href="#">Shoes</a>
+                        <a href="#"><h3>Check these out</h3></a>
+                        <p>Only $500000</p>
+                    </article>
+                    <article class="product-card">
+                        <img src="img/shoe_1.webp" alt="Hey, cool shoes man">
+                        <a href="#">Shoes</a>
+                        <a href="#"><h3>Check these out</h3></a>
+                        <p>Only $500000</p>
+                    </article>
+                    <article class="product-card">
+                        <img src="img/shoe_1.webp" alt="Hey, cool shoes man">
+                        <a href="#">Shoes</a>
+                        <a href="#"><h3>Check these out</h3></a>
+                        <p>Only $500000</p>
+                    </article>
+                    <article class="product-card">
+                        <img src="img/shoe_1.webp" alt="Hey, cool shoes man">
+                        <a href="#">Shoes</a>
+                        <a href="#"><h3>Check these out</h3></a>
+                        <p>Only $500000</p>
+                    </article>
+                    <article class="product-card">
+                        <img src="img/shoe_1.webp" alt="Hey, cool shoes man">
+                        <a href="#">Shoes</a>
+                        <a href="#"><h3>Check these out</h3></a>
+                        <p>Only $500000</p>
+                    </article>
+                    <article class="product-card">
+                        <img src="img/shoe_1.webp" alt="Hey, cool shoes man">
+                        <a href="#">Shoes</a>
+                        <a href="#"><h3>Check these out</h3></a>
+                        <p>Only $500000</p>
+                    </article>
+                    <article class="product-card">
+                        <img src="img/shoe_1.webp" alt="Hey, cool shoes man">
+                        <a href="#">Shoes</a>
+                        <a href="#"><h3>Check these out</h3></a>
+                        <p>Only $500000</p>
+                    </article>
+                    <article class="product-card">
+                        <img src="img/shoe_1.webp" alt="Hey, cool shoes man">
+                        <a href="#">Shoes</a>
+                        <a href="#"><h3>Check these out</h3></a>
+                        <p>Only $500000</p>
+                    </article>
+                    <article class="product-card">
+                        <img src="img/shoe_1.webp" alt="Hey, cool shoes man">
+                        <a href="#">Shoes</a>
+                        <a href="#"><h3>Check these out</h3></a>
+                        <p>Only $500000</p>
+                    </article>
+                </section>
+            </main>
+            <footer>Zalando Clone</footer>
+            </div>
     </body>
 </html>
