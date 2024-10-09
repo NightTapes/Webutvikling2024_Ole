@@ -108,6 +108,9 @@ img {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 1rem;
+    h2{
+      width: 100%;
+    }
   }
 
   #outlet {
@@ -131,4 +134,39 @@ img {
     box-shadow: 13px 9px 20px 0px #efefef; /* Legger til en boks-skygge for dybdeeffekt */
     border-radius: 4px; /* Avrunder hjørnene på produktkortet med 4px */
     padding: 1rem; /* Legger til 1rem padding på innsiden av produktkortet */
+}
+
+/* For desktop */
+@media only screen and (min-width:800px){
+  .fa-burger{
+    display: none;
+  }
+  #menu{
+    display: flex !important;
+  }
+}
+/* For mobil */
+@media only screen and (max-width:799px){
+  #menu{
+    display: none;
+  }
+  #grid-container{
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+  }
+  header, main, aside, footer{
+    grid-column: 1/2;
+  }
+  header{
+    grid-row: 1/2;
+  }
+  main{
+    grid-row: 2/3;
+  }
+  aside{
+    display: none;
+  }
+  footer{
+    grid-row: 3/4;
+  }
 }
